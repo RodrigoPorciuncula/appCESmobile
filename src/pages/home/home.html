@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle left>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <!-- <ion-title>
+      {{nomeUsuario}}
+    </ion-title> -->
+    <ion-buttons end>
+      <button ion-button icon-only clear>
+        <ion-icon name="iconNav"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-item>
+      <ion-label class="lista-objetos-disponiveis-titulo">Objetos Disponíveis</ion-label>
+      
+    </ion-item>
+  </div>
+  <div class="linha"></div>
+  <div>
+    <ion-item>
+      <ion-searchbar [autocomplete]="on" animated="true" showCancelButton="false" placeholder="Buscar Objeto" [(ngModel)]="termoBusca" (ionInput)="setFiltrarItens()"> </ion-searchbar>
+    </ion-item>
+  </div>
+  
+  <ion-list> 
+    <ion-item *ngFor="let item of listaObjetos">
+      <div class="lista-objetos-disponiveis-item"> {{item.nomeObjeto}} </div>
+      <ion-buttons end>
+        <button class="detalheObjeto" ion-button icon-only clear (click)="detalharObjetoDisp(item)">
+          <ion-icon name="detalharObjeto"></ion-icon>
+        </button>
+      </ion-buttons>
+      <div class="lista-objetos-disponiveis-quantificador">Quantidade: {{item.quantidadeObjeto}} </div>
+      <div class="linha"></div>
+    </ion-item>
+  </ion-list>
+</ion-content>

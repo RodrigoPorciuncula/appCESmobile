@@ -1,0 +1,81 @@
+page-home {
+
+    .ion-md-iconNav::before {
+        content: url(../../assets/imgs/nav-cesmobile.png);
+    }
+
+    .toolbar-background-md {
+        background: #0267b2;
+    }
+
+    .toolbar-title-md {
+        font-family: FuturaStd;
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+    }
+
+    .lista-objetos-disponiveis-titulo {
+        font-family: FuturaStd;
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #0267b2;
+    }
+
+    .item-md.item-block .item-inner {
+        border-bottom: none;
+    }
+
+    .linha {
+        width: 100%;
+        border-bottom: 1px solid #bbc0c6;
+    }
+
+    .lista-objetos-disponiveis-item {
+        font-family: FuturaStd;
+        font-size: 18px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #4c556c;
+        position: absolute;
+        margin-top: 10px;
+    }
+
+    .lista-objetos-disponiveis-quantificador {
+        font-family: Arial;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: #818796;
+        margin-top: -6px;
+        margin-left: 14px;
+    }
+
+    .detalheObjeto {
+        margin-top: 0px;
+    }
+
+    .ion-md-detalharObjeto::before {
+        content: url(../../assets/imgs/seta-group.png);
+    }
+
+    .linha { 
+        border-bottom: 1px solid #BBC0C6;
+        margin-top: 10px;
+    }
+
+}
