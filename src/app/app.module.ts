@@ -3,6 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { FingerprintAIO } from '@ionic-native/fingerprint-aio';
 
 import { MyApp } from './app.component';
 import { BuscaProvider } from '../providers/busca/busca';
@@ -28,6 +29,7 @@ import { DialogoProvider } from '../providers/dialogo/dialogo';
     HttpClientModule,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     DialogoProvider,
+    FingerprintAIO,
   ]
 })
 export class AppModule {}

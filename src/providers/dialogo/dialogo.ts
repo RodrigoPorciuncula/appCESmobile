@@ -31,7 +31,7 @@ export class DialogoProvider {
         // this.loading = this.loadingCtrl.create(opts);
         this.loading = this.loadingCtrl.create({
             spinner: 'hide',
-            content: '<div> <img width="400px" height="400px" src="assets/imgs/loadCesMobile.gif" /> </div>'
+            content: '<div> <img width="100px" height="100px" src="assets/imgs/loadCesMobile.gif" /> </div>'
         });
         this.loading.present();
     }

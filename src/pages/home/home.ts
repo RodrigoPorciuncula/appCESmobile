@@ -60,10 +60,20 @@ export class HomePage {
   }
 
   detalharObjetoDisp(item: any) {
+    var self = this;
     console.log("detalharObjetoDisp()");
     console.log(item.nomeObjeto + "Detalhar Objeto HOME");
     console.log(item.quantidadeObjeto + "Detalhar Objeto HOME");
-    this.navCtrl.push("DetalheObjetoPage", {objeto: item});
+    // self.dialogo.showAlert({
+    //   message: "Confirma o empréstimo do(a) " + item.nomeObjeto
+    // }, true, function() => {
+    //   self.confirmaEmprestimo(item);
+    // });
+    // this.navCtrl.push("DetalheObjetoPage", {objeto: item});
+  }
+
+  private confirmaEmprestimo(item: any) {
+    console.log("Item confirmado: " + item);
   }
 
 }
