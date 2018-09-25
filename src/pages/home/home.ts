@@ -66,10 +66,10 @@ export class HomePage {
     console.log(item.quantidadeObjeto + "Detalhar Objeto HOME");
     // self.dialogo.showAlert({
     //   message: "Confirma o empréstimo do(a) " + item.nomeObjeto
-    // }, true, function() => {
+    // }, false, () => {
     //   self.confirmaEmprestimo(item);
     // });
-    // this.navCtrl.push("DetalheObjetoPage", {objeto: item});
+    this.navCtrl.push("DetalheObjetoPage", {objeto: item});
   }
 
   private confirmaEmprestimo(item: any) {
